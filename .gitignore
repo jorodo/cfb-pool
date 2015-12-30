@@ -1,0 +1,7 @@
+*.png
+*.html
+util/*/tmp
+bkup/
+_darcs/
+notes/
+srv/test/

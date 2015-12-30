@@ -1,0 +1,14 @@
+**2015-2016 Bowl Pool**
+
+| *Last updated:  2015-12-30 08:15:46*
+| *Last bowl scored:  TEXAS BOWL (LSU vs. Texas Tech)*
+
+
+- `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)
+- `Results <results.html>`_ (`csv <results.csv>`__)
+- `Picks <picks.html>`_ (`csv <picks.csv>`__)
+
+Analysis
+
+- `Score distribution <scoresHistogram.png>`_
+

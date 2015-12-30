@@ -1,0 +1,14 @@
+**2014-2015 Bowl Pool**
+
+| *Last updated:  2015-01-14 21:23:51*
+| *Last bowl scored:  GODADDY.COM BOWL (Toledo vs. Arkasas State)*
+
+
+- `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)
+- `Results <results.html>`_ (`csv <results.csv>`__)
+- `Picks <picks.html>`_ (`csv <picks.csv>`__)
+
+Analysis
+
+- `Score distribution <scoresHistogram.png>`_
+
