@@ -200,8 +200,7 @@ class BowlPool():
             teamName = self._teamList[j]
             results_list.append((teamName,self._scoreTotals[j]))
 
-        self._sortedScoresList = sorted(results_list, key=itemgetter(1))
-        self._sortedScoresList.reverse()
+        self._sortedScoresList = sorted(results_list, key=itemgetter(1), reverse=True)
         rank = 1
         pvsScore = 0.
         self._rankingsList = [None for i in xrange(self._nTeams)]

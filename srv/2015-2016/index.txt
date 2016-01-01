@@ -1,7 +1,7 @@
 **2015-2016 Bowl Pool**
 
-| *Last updated:  2015-12-31 23:27:38*
-| *Last bowl scored:  COTTON BOWL (Alabama vs. Michigan State)*
+| *Last updated:  2016-01-01 16:16:23*
+| *Last bowl scored:  CITRUS BOWL (Michigan vs. Florida)*
 
 
 - `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)

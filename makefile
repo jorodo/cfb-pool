@@ -14,6 +14,10 @@ all:
 test:	
 	python main.py -d srv/test
 	rst2html srv/test/index.txt > srv/test/index.html
+
+test-site:	
+	python main.py -d srv/test
+	rst2html srv/test/index.txt > srv/test/index.html
 	cp -r srv/test/* ~/code/jrd.spinodal.org/jorodo.github.io/bowl_pool/test/
 
 clean:
