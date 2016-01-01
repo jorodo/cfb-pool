@@ -51,9 +51,11 @@ class BowlPool():
         self._bonusPointsList = []
         self._bonusIDList = []
         self._resultsList = []
+        self._resultsIdxs = []
         self._rankingsList = []
         self._resultsVector = None
         self._bonusResultsList = []
+        self._bonusResultsIdxs = []
         self._resultsArray = None
         self._picksArray = None
         self._bonusPicksArray = None
@@ -93,7 +95,9 @@ class BowlPool():
             favWon = line_data[6]
             self._resultsList.append(int(favWon))
             self._resultsVector[i] = float(favWon)
-            if float(favWon) >= 0: self._nResults += 1
+            if float(favWon) >= 0:
+                self._nResults += 1
+                self._resultsIdxs.append(i)
 
     def _parseBowlPicksFile(self):
         lines = file(self._bowlPicksFileName).read().strip().split('\n')
@@ -127,7 +131,9 @@ class BowlPool():
             self._bonusPointsList.append(float(line_data[2]))
             bonusResult = line_data[3].strip()
             self._bonusResultsList.append(bonusResult)
-            if bonusResult != 'None': self._nBonusResults += 1
+            if bonusResult != 'None':
+                self._nBonusResults += 1
+                self._bonusResultsIdxs.append(i)
 
     def _parseBonusPicksFile(self):
         lines = file(self._bonusPicksFileName).read().strip().split('\n')
@@ -135,21 +141,9 @@ class BowlPool():
         
         for i, line in enumerate(lines[1:]):
             line_data = line.split(',')[:self._nTeams]
-            # # DEBUG
-            # print line_data
-            # print len(line_data)
-            # print self._nTeams
-            # print self._nBonus
-            # sys.exit()
-            # # END DEBUG
             self._bonusPicksArray.append([])
             for j, pick in enumerate(line_data):   # FIXME: don't let csv line end in ','
-                # # --- debug (FIXME: trying to find invalid entries here.)
-                # if i > 0 and pick != 'Y' and pick != 'N':
-                #     teamName = self._teamList[j]
-                #     print '%s picked %s for: %s'%(teamName, pick, self._bonusList[i])
-                #     # if pick == 'T': pick = 'Y'
-                # # --- end debug
+                # FIXME: Need to check for invalid entries here.
                 self._bonusPicksArray[i].append(pick)
 
     def _parseDogScoreFile(self):
@@ -175,8 +169,8 @@ class BowlPool():
         self._loadArrays()
         self._scoreArray = self._winsArray*(self._pointsArray + self._stbArray)
         self._loadBonusScoreArray()
-        self._scoreTotals = self._scoreArray[:self._nResults].sum(axis=0) \
-                            + self._bonusScoreArray[:self._nBonusResults].sum(axis=0)
+        self._scoreTotals = self._scoreArray[self._resultsIdxs].sum(axis=0) \
+                            + self._bonusScoreArray[self._bonusResultsIdxs].sum(axis=0)
         self._rankTeams()
 
     def _loadArrays(self):
@@ -282,8 +276,8 @@ class BowlPool():
 
     def _loadBonusScoreArray(self):
         self._bonusScoreArray = np.zeros((self._nBonus, self._nTeams))
-        for i in xrange(self._nBonus):
-            bonusResult = self._bonusResultsList[i]
+        for i in self._bonusResultsIdxs:
+        # for i in xrange(self._nBonus):
             for j in xrange(self._nTeams):
                 if self._bonusPicksArray[i][j] == self._bonusResultsList[i]:
                     self._bonusScoreArray[i][j] = self._bonusPointsList[i]
@@ -429,7 +423,8 @@ class BowlPool():
         fout.write('.. csv-table:: \n')
         fout.write('   :header: %s\n'%headerString)
         fout.write('\n')
-        for i in xrange(self._nResults):
+        # for i in xrange(self._nResults):
+        for i in self._resultsIdxs:
             fout.write('   "%s", "%s", "%s", "%s", "%s"'%(i+1, self._bowlList[i],
                                                           self._favList[i],
                                                           self._dogList[i],
@@ -438,7 +433,8 @@ class BowlPool():
                 fout.write(', "%s"'%self._scoreArray[i][j])
             fout.write('\n')
 
-        for i in xrange(self._nBonus):
+        # for i in xrange(self._nBonus):
+        for i in self._bonusResultsIdxs:
             fout.write('   "%s", "%s", "%s", "%s", "%s"'%(self._bonusIDList[i], self._bonusList[i],
                                                           emptyCell, emptyCell, emptyCell))
             for j in xrange(self._nTeams):
@@ -463,7 +459,8 @@ class BowlPool():
             headerString += ',%s'%self._teamList[j]
         fout = open(outfilename, 'w')
         fout.write('%s\n'%headerString)
-        for i in xrange(self._nResults):
+        # for i in xrange(self._nResults):
+        for i in self._resultsIdxs:
             fout.write('%s,%s,%s,%s,%s'%(i+1, self._bowlList[i],
                                          self._favList[i],
                                          self._dogList[i],
@@ -472,7 +469,8 @@ class BowlPool():
                 fout.write(',%s'%self._scoreArray[i][j])
             fout.write('\n')
     
-        for i in xrange(self._nBonus):
+        # for i in xrange(self._nBonus):
+        for i in self._bonusResultsIdxs:
             fout.write('%s,%s,%s,%s,%s'%(self._bonusIDList[i], self._bonusList[i],
                                          emptyCell, emptyCell, emptyCell))
             for j in xrange(self._nTeams):

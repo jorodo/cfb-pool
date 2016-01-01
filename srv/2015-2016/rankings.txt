@@ -1,72 +1,72 @@
-| *Last updated:  2015-12-30 08:15:45*
-| *Last bowl scored:  TEXAS BOWL (LSU vs. Texas Tech)*
+| *Last updated:  2015-12-31 23:27:38*
+| *Last bowl scored:  COTTON BOWL (Alabama vs. Michigan State)*
 
-| 1. Santa Cruz Bill 17.75
-| 2. BROCOHLI !!!!! 17.5
-| 3. HAM BEAST 17.0
-| 4. Beaver Believer 16.0
-| 5. Lucky in 2016 15.5
-| 6. GUAC BOYZ 15.25
-| 7. Yellowstone  15.0
-| 7. POPO 15.0
-| 7. FF  15.0
-| 7. Blind Prognosticators 15.0
-| 11. Go Frogs 14.75
-| 11. **Eclipse 14.75**
-| 13. **Rocket Surgeon 14.5**
-| 13. Cowboy 14.5
-| 13. Beach Bum 14.5
-| 16. Jake & the Neverland Pirates 14.25
-| 17. Opposite of Dad 14.0
-| 17. LumberSexual 14.0
-| 17. Devil's Tower 14.0
-| 17. Corgidawg 14.0
-| 21. FIELDS OF WHEAT 13.75
-| 22. TTRedRaider09 13.5
-| 22. Trollotopia 13.5
-| 22. Spiker 13.5
-| 22. KROB15 13.5
-| 22. GODIVA 13.5
-| 22. Cotton Headed Ninny Muggins 13.5
-| 28. Shi boa 13.25
-| 28. **JessePinkman 13.25**
-| 28. Hou Dat 13.25
-| 28. Going Bowling 13.25
-| 28. **Captain 13.25**
-| 33. EL CAPITAN 13.0
-| 34. Texsons 12.75
-| 34. Tan Mei yi  12.75
-| 34. Hunter 55 12.75
-| 34. Hui Mama 12.75
-| 38. West Coast Bias 12.5
-| 38. Team Aaron 12.5
-| 38. Oregon Okie 12.5
-| 41. Texas Women 12.25
-| 42. HALF DOME 12.0
-| 42. Clairvoyantsmith 12.0
-| 42. BUBBA 12.0
-| 45. The Force Awakens 11.75
-| 45. Texas State 11.75
-| 47. Billy Bad 11.5
-| 48. "Steve Harvey's ""Columbia""" 11.25
-| 48. Spartans 11.25
-| 48. Slave Darby 11.25
-| 51. Perfect Spiral 11.0
-| 52. Sure Thing 10.75
-| 52. Pooh 10.75
-| 52. Billy Bad 2nd 10.75
-| 55. Yoda 10.5
-| 55. **Surf 10.5**
-| 57. Gussysue 10.25
-| 57. **Groodle 10.25**
-| 57. **D-bo 10.25**
-| 57. COUGAR 10.25
-| 61. **Mama Bear 10.0**
-| 62. Trojans 9.75
-| 63. Frog Man 4Ever 9.5
-| 64. Julia 9.25
-| 65. Magnitogorsk 8.75
-| 66. Deakins 8.5
-| 67. Bernie Trump 8.0
-| 67. Aggies 8.0
-| 69. GMen 7.5
+| 1. BROCOHLI !!!!! 27.5
+| 2. Beaver Believer 27.0
+| 3. **Rocket Surgeon 26.25**
+| 4. **Eclipse 25.5**
+| 5. **JessePinkman 25.25**
+| 6. Texsons 24.75
+| 6. Team Aaron 24.75
+| 6. Jake & the Neverland Pirates 24.75
+| 9. GUAC BOYZ 24.25
+| 10. Spiker 24.0
+| 11. Yoda 23.75
+| 11. Santa Cruz Bill 23.75
+| 11. Corgidawg 23.75
+| 14. POPO 23.5
+| 14. HAM BEAST 23.5
+| 16. Cowboy 23.0
+| 17. Yellowstone  22.75
+| 17. Devil's Tower 22.75
+| 19. FIELDS OF WHEAT 22.5
+| 20. Hou Dat 22.25
+| 20. Go Frogs 22.25
+| 22. KROB15 22.0
+| 23. Perfect Spiral 21.75
+| 24. Texas Women 21.5
+| 24. Lucky in 2016 21.5
+| 24. GODIVA 21.5
+| 27. West Coast Bias 21.0
+| 27. TTRedRaider09 21.0
+| 27. "Steve Harvey's ""Columbia""" 21.0
+| 27. FF  21.0
+| 27. Beach Bum 21.0
+| 32. Opposite of Dad 20.75
+| 33. Hunter 55 20.5
+| 34. The Force Awakens 20.25
+| 35. Frog Man 4Ever 20.0
+| 35. BUBBA 20.0
+| 37. Tan Mei yi  19.75
+| 37. Slave Darby 19.75
+| 37. Going Bowling 19.75
+| 37. Clairvoyantsmith 19.75
+| 41. Texas State 19.5
+| 41. **D-bo 19.5**
+| 43. Sure Thing 19.25
+| 43. **Captain 19.25**
+| 45. Pooh 19.0
+| 45. Blind Prognosticators 19.0
+| 47. HALF DOME 18.75
+| 48. **Mama Bear 18.5**
+| 49. Trojans 18.25
+| 49. LumberSexual 18.25
+| 51. Magnitogorsk 18.0
+| 51. Cotton Headed Ninny Muggins 18.0
+| 53. **Surf 17.75**
+| 53. EL CAPITAN 17.75
+| 55. Trollotopia 17.5
+| 56. Shi boa 17.25
+| 57. Spartans 17.0
+| 58. Hui Mama 16.75
+| 58. COUGAR 16.75
+| 60. **Groodle 16.5**
+| 60. Billy Bad 16.5
+| 60. Bernie Trump 16.5
+| 63. Billy Bad 2nd 16.0
+| 64. Gussysue 15.75
+| 65. Oregon Okie 14.5
+| 65. Julia 14.5
+| 67. Deakins 13.0
+| 67. Aggies 13.0
+| 69. GMen 10.75

@@ -1,7 +1,7 @@
 **2015-2016 Bowl Pool**
 
-| *Last updated:  2015-12-30 08:15:46*
-| *Last bowl scored:  TEXAS BOWL (LSU vs. Texas Tech)*
+| *Last updated:  2015-12-31 23:27:38*
+| *Last bowl scored:  COTTON BOWL (Alabama vs. Michigan State)*
 
 
 - `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)

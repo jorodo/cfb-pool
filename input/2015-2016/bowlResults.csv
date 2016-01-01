@@ -16,14 +16,14 @@
 16,RUSSELL ATHLETIC BOWL,2,Baylor,North Carolina,1,1
 17,ARIZONA BOWL,3,Colorado State,Nevada,1,0
 18,TEXAS BOWL,7,LSU,Texas Tech,1,1
-19,BIRMINGHAM BOWL,2.5,Auburn,Memphis,1,-1
-20,BELK BOWL,5.5,Mississippi St,NC State,1,-1
-21,MUSIC CITY BOWL,4.5,Louisville,Texas A&M,1,-1
-22,HOLIDAY BOWL,3,USC,Wisconsin,1,-1
-23,PEACH BOWL,7,Florida State,Houston,1,-1
-24,ORANGE BOWL,3.5,Oklahoma,Clemson,2,-1
-25,COTTON BOWL,9.5,Alabama,Michigan State,2,-1
-26,OUTBACK BOWL,8.5,Tennessee,Northwestern,1,-1
+19,BIRMINGHAM BOWL,2.5,Auburn,Memphis,1,1
+20,BELK BOWL,5.5,Mississippi St,NC State,1,1
+21,MUSIC CITY BOWL,4.5,Louisville,Texas A&M,1,1
+22,HOLIDAY BOWL,3,USC,Wisconsin,1,0
+23,PEACH BOWL,7,Florida State,Houston,1,0
+24,ORANGE BOWL,3.5,Oklahoma,Clemson,2,0
+25,COTTON BOWL,9.5,Alabama,Michigan State,2,1
+26,OUTBACK BOWL,8.5,Tennessee,Northwestern,1,1
 27,FIESTA BOWL,6.5,Ohio State,Notre Dame,2,-1
 28,CITRUS BOWL,4.5,Michigan,Florida,1,-1
 29,ROSE BOWL,6.5,Stanford,Iowa,2,-1
