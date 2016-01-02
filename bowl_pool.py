@@ -159,19 +159,25 @@ class BowlPool():
 
     # ---- calculate results of bowl pool -------------------------------
 
-    def computeResults(self):
+    def computeResults(self, hasBonus=True):
         """
         Compute the scores for each team in each bowl and store the result
         in the score matrix.
 
 
         """
-        self._loadArrays()
-        self._scoreArray = self._winsArray*(self._pointsArray + self._stbArray)
-        self._loadBonusScoreArray()
-        self._scoreTotals = self._scoreArray[self._resultsIdxs].sum(axis=0) \
-                            + self._bonusScoreArray[self._bonusResultsIdxs].sum(axis=0)
-        self._rankTeams()
+        if hasBonus:
+            self._loadArrays()
+            self._scoreArray = self._winsArray*(self._pointsArray + self._stbArray)
+            self._loadBonusScoreArray()
+            self._scoreTotals = self._scoreArray[self._resultsIdxs].sum(axis=0) \
+                                + self._bonusScoreArray[self._bonusResultsIdxs].sum(axis=0)
+            self._rankTeams()
+        else:
+            self._loadArrays()
+            self._scoreArray = self._winsArray*(self._pointsArray + self._stbArray)
+            self._scoreTotals = self._scoreArray[self._resultsIdxs].sum(axis=0)
+            self._rankTeams()
 
     def _loadArrays(self):
         """
@@ -214,17 +220,22 @@ class BowlPool():
             pvsScore = score
 
     def _getTrajectories(self, pointsTrajectories, rankingsTrajectories):
-        nResults = self._nResults
-        for i in xrange(1, self._nResults + 1):
-            self._nResults = i
-            self.computeResults()
-            pointsTrajectories[i-1,:] = self._scoreTotals.copy()
+        resultsIdxs = self._resultsIdxs
+        # FIXME: need to identify steps at which to apply each bonus.
+        bonusIdx = 24 
+        for i,idx in enumerate(resultsIdxs):
+            self._resultsIdxs = resultsIdxs[:i+1]
+            if idx >= bonusIdx:
+                self.computeResults()
+            else:
+                self.computeResults(False)
+            pointsTrajectories[i,:] = self._scoreTotals.copy()
             for j in xrange(self._nTeams):
                 teamName = self._sortedScoresList[j][0]
                 teamIndex = self._getTeamIndex(teamName)
                 rank = self._rankingsList[teamIndex]
-                rankingsTrajectories[i-1,teamIndex] = rank
-        self._nResults = nResults
+                rankingsTrajectories[i,teamIndex] = rank
+        self._resultsIdxs = resultsIdxs
                 
     def _scoreBowl(self, bowlID, pick, favWon=None):
         """
@@ -574,26 +585,31 @@ class BowlPool():
 
         teamIndexes = [self._getTeamIndex(x) for x in teamList]
         
-        fig = plt.figure()
+        fig = plt.figure(figsize=(10,5))
         ax = fig.add_subplot(111)
-        x = np.arange(self._nResults)
-        for index in teamIndexes:
-            ax.plot(x, pointsTrajectories[:,index])
+        ax.set_position([0.1,0.1,0.5,0.8])
+        x = np.arange(1, self._nResults+1)
+        for i, index in enumerate(teamIndexes):
+            teamName = teamList[i]
+            ax.plot(x, pointsTrajectories[:,index], label=teamName)
         ax.set_xlabel('Bowl Game Number')
         ax.set_ylabel('Total Points')
+        ax.legend(loc = 'center left', bbox_to_anchor = (1.0, 0.5))
         fig.savefig(os.path.join(self._output_dir,'pointsTrajectories.png'))
         fig.clf()
     
-        # TODO:  add labels and stuff to these plots
-    
-        fig = plt.figure()
+        fig = plt.figure(figsize=(10,5))
         ax = fig.add_subplot(111)
-        x = np.arange(self._nResults)
+        ax.set_position([0.1,0.1,0.5,0.8])
+        x = np.arange(1, self._nResults+1)
         for i, index in enumerate(teamIndexes):
             teamName = teamList[i]
-            ax.plot(x, rankingsTrajectories[:,index])
+            ax.plot(x, rankingsTrajectories[:,index], label=teamName)
         ax.set_xlabel('Bowl Game Number')
         ax.set_ylabel('Ranking')
+        minmax = ax.axis()
+        ax.axis([minmax[0],minmax[1],1,minmax[3]])
+        ax.legend(loc = 'center left', bbox_to_anchor = (1.0, 0.5))
         fig.gca().invert_yaxis()
         fig.savefig(os.path.join(self._output_dir,'rankingsTrajectories.png'))
         fig.clf()

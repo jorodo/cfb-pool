@@ -1,7 +1,7 @@
 **2015-2016 Bowl Pool**
 
-| *Last updated:  2016-01-01 16:16:23*
-| *Last bowl scored:  CITRUS BOWL (Michigan vs. Florida)*
+| *Last updated:  2016-01-01 23:49:32*
+| *Last bowl scored:  SUGAR BOWL (Ole Miss vs. Oklahoma State)*
 
 
 - `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)
@@ -11,4 +11,6 @@
 Analysis
 
 - `Score distribution <scoresHistogram.png>`_
+- `Points Trajectories <PointsTrajectories.png>`_
+- `Rankings Trajectories <rankingsTrajectories.png>`_
 
