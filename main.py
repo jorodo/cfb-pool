@@ -95,7 +95,7 @@ for bowlPoolName in BowlPoolList:
     bp_fout.write('Analysis\n')
     bp_fout.write('\n')
     bp_fout.write('- `Score distribution <scoresHistogram.png>`_\n')
-    bp_fout.write('- `Points Trajectories <PointsTrajectories.png>`_\n')
+    bp_fout.write('- `Points Trajectories <pointsTrajectories.png>`_\n')
     bp_fout.write('- `Rankings Trajectories <rankingsTrajectories.png>`_\n')
     bp_fout.write('\n')
     bp_fout.close()
