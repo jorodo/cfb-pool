@@ -131,7 +131,10 @@ class BowlPool():
             self._bonusPointsList.append(float(line_data[2]))
             bonusResult = line_data[3].strip()
             self._bonusResultsList.append(bonusResult)
-            if bonusResult != 'None':
+            # bowlIdx identifies the bowl game at which to apply this bonus
+            # result (used in make trajectories)
+            bowlIdx = int(line_data[4]) - 1
+            if bonusResult != 'None' and bowlIdx in self._resultsIdxs:
                 self._nBonusResults += 1
                 self._bonusResultsIdxs.append(i)
 
@@ -159,25 +162,19 @@ class BowlPool():
 
     # ---- calculate results of bowl pool -------------------------------
 
-    def computeResults(self, hasBonus=True):
+    def computeResults(self):
         """
         Compute the scores for each team in each bowl and store the result
         in the score matrix.
 
 
         """
-        if hasBonus:
-            self._loadArrays()
-            self._scoreArray = self._winsArray*(self._pointsArray + self._stbArray)
-            self._loadBonusScoreArray()
-            self._scoreTotals = self._scoreArray[self._resultsIdxs].sum(axis=0) \
-                                + self._bonusScoreArray[self._bonusResultsIdxs].sum(axis=0)
-            self._rankTeams()
-        else:
-            self._loadArrays()
-            self._scoreArray = self._winsArray*(self._pointsArray + self._stbArray)
-            self._scoreTotals = self._scoreArray[self._resultsIdxs].sum(axis=0)
-            self._rankTeams()
+        self._loadArrays()
+        self._scoreArray = self._winsArray*(self._pointsArray + self._stbArray)
+        self._loadBonusScoreArray()
+        self._scoreTotals = self._scoreArray[self._resultsIdxs].sum(axis=0) \
+                            + self._bonusScoreArray[self._bonusResultsIdxs].sum(axis=0)
+        self._rankTeams()
 
     def _loadArrays(self):
         """
@@ -221,14 +218,9 @@ class BowlPool():
 
     def _getTrajectories(self, pointsTrajectories, rankingsTrajectories):
         resultsIdxs = self._resultsIdxs
-        # FIXME: need to identify steps at which to apply each bonus.
-        bonusIdx = 24 
         for i,idx in enumerate(resultsIdxs):
             self._resultsIdxs = resultsIdxs[:i+1]
-            if idx >= bonusIdx:
-                self.computeResults()
-            else:
-                self.computeResults(False)
+            self.computeResults()
             pointsTrajectories[i,:] = self._scoreTotals.copy()
             for j in xrange(self._nTeams):
                 teamName = self._sortedScoresList[j][0]
@@ -607,8 +599,8 @@ class BowlPool():
             ax.plot(x, rankingsTrajectories[:,index], label=teamName)
         ax.set_xlabel('Bowl Game Number')
         ax.set_ylabel('Ranking')
-        minmax = ax.axis()
-        ax.axis([minmax[0],minmax[1],1,minmax[3]])
+        # minmax = ax.axis()
+        # ax.axis([minmax[0],minmax[1],1,minmax[3]])
         ax.legend(loc = 'center left', bbox_to_anchor = (1.0, 0.5))
         fig.gca().invert_yaxis()
         fig.savefig(os.path.join(self._output_dir,'rankingsTrajectories.png'))

@@ -1,6 +1,6 @@
-T1,Total points for BOTH semifinal games,0.0,None
-B1,Who will win the National Championship,2.0,None
-B2,Deshaun Watson > total yards than Baker Mayfield,1.0,Y
-B3,Baker Mayfield more than 40 yard NET rushing,1.0,N
-B4,Tide holds Sparty to less than 320 total yards,1.0,Y
-B5,Derrick Henry runs for more than 120 yards,1.0,N
+T1,Total points for BOTH semifinal games,0.0,None,1000
+B1,Who will win the National Championship,2.0,None,34
+B2,Deshaun Watson > total yards than Baker Mayfield,1.0,Y,24
+B3,Baker Mayfield more than 40 yard NET rushing,1.0,N,24
+B4,Tide holds Sparty to less than 320 total yards,1.0,Y,25
+B5,Derrick Henry runs for more than 120 yards,1.0,N,25
