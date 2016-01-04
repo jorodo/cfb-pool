@@ -48,6 +48,7 @@ class BowlPool():
         self._bowlList = []
         self._spreadList = []
         self._bonusList = []
+        self._bonusBowlList = []
         self._bonusPointsList = []
         self._bonusIDList = []
         self._resultsList = []
@@ -131,10 +132,10 @@ class BowlPool():
             self._bonusPointsList.append(float(line_data[2]))
             bonusResult = line_data[3].strip()
             self._bonusResultsList.append(bonusResult)
-            # bowlIdx identifies the bowl game at which to apply this bonus
-            # result (used in make trajectories)
-            bowlIdx = int(line_data[4]) - 1
-            if bonusResult != 'None' and bowlIdx in self._resultsIdxs:
+            # bonusBowlList identifies the bowl game at which to apply the
+            # particular bonus result (used in make trajectories).
+            self._bonusBowlList.append(int(line_data[4]) - 1)
+            if bonusResult != 'None':
                 self._nBonusResults += 1
                 self._bonusResultsIdxs.append(i)
 
@@ -278,11 +279,12 @@ class BowlPool():
 
     def _loadBonusScoreArray(self):
         self._bonusScoreArray = np.zeros((self._nBonus, self._nTeams))
-        for i in self._bonusResultsIdxs:
         # for i in xrange(self._nBonus):
-            for j in xrange(self._nTeams):
-                if self._bonusPicksArray[i][j] == self._bonusResultsList[i]:
-                    self._bonusScoreArray[i][j] = self._bonusPointsList[i]
+        for i in self._bonusResultsIdxs:
+            if self._bonusBowlList[i] in self._resultsIdxs:
+                for j in xrange(self._nTeams):
+                    if self._bonusPicksArray[i][j] == self._bonusResultsList[i]:
+                        self._bonusScoreArray[i][j] = self._bonusPointsList[i]
 
         return
 
