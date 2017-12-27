@@ -26,13 +26,16 @@ main_fout = open(mainfile,'w')
 main_fout.write('**Bowl Pools**\n')
 main_fout.write('\n')
 
-BowlPoolList = ['2014-2015','2015-2016']
-CompletedBowlPools = ['2014-2015']
-highlightList = ['Captain','D-bo','JessePinkman','Mama Bear',
-                 'Rocket Surgeon','Surf', 'Groodle', 'Eclipse']
+BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018']
+CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017']
+highlightList = ['Nerf Herder','Static', 'Lightning', 'Thunder',
+                 'D-Bo','Em214', 'GlamKam', 'Bumblerooski', '#MamaBear',
+                 'Eclipse']
+performAnalysis = True
+#performAnalysis = False
 
 for bowlPoolName in BowlPoolList:
-    main_fout.write('- `%s <%s>`_'%(bowlPoolName, bowlPoolName))
+    main_fout.write('- `%s <%s/>`_'%(bowlPoolName, bowlPoolName))
 
     if bowlPoolName in CompletedBowlPools:
         main_fout.write('\n')
@@ -59,18 +62,14 @@ for bowlPoolName in BowlPoolList:
     B.writeResultsCSVFile()
     
     # analyze results
-    B.plotScoresHistogram(nbins)
-    B.plotTrajectories(highlightList)
+    if performAnalysis:
+        B.plotScoresHistogram(nbins)
+        B.plotTrajectories(highlightList)
     
     # # print info and debug
     # B.listBowlData()
-    B.printPicks('Captain')
-    B.printPicks('D-bo')
-    B.printPicks('Eclipse')
-    B.printPicks('Rocket Surgeon')
-    B.printPicks('Groodle')
-    B.printPicks('Mama Bear')
-    B.printPicks('JessePinkman')
+    for highlightedName in highlightList:
+        B.printPicks(highlightedName)
     B.checkSTBowls()
 
     bp_index_path = os.path.join(output_dir,'index')
@@ -92,12 +91,13 @@ for bowlPoolName in BowlPoolList:
     # bp_fout.write('- Results (`csv <results.csv>`__ | `html <results.html>`__)\n')
     # bp_fout.write('- Picks (`csv <picks.csv>`__ | `html <picks.html>`__)\n')
     bp_fout.write('\n')
-    bp_fout.write('Analysis\n')
-    bp_fout.write('\n')
-    bp_fout.write('- `Score distribution <scoresHistogram.png>`_\n')
-    bp_fout.write('- `Points Trajectories <pointsTrajectories.png>`_\n')
-    bp_fout.write('- `Rankings Trajectories <rankingsTrajectories.png>`_\n')
-    bp_fout.write('\n')
+    if performAnalysis:
+        bp_fout.write('Analysis\n')
+        bp_fout.write('\n')
+        bp_fout.write('- `Score distribution <scoresHistogram.png>`_\n')
+        bp_fout.write('- `Points Trajectories <pointsTrajectories.png>`_\n')
+        bp_fout.write('- `Rankings Trajectories <rankingsTrajectories.png>`_\n')
+        bp_fout.write('\n')
     bp_fout.close()
 
     os.system('rst2html %s.txt %s.html'%(bp_index_path, bp_index_path))
