@@ -434,7 +434,10 @@ class BowlPool():
                                                           self._dogList[i],
                                                           self._spreadList[i]))
             for j in xrange(self._nTeams):
-                fout.write(', "%s"'%self._scoreArray[i][j])
+                if self._stbArray[i][j] and (self._scoreArray[i][j] > 0):
+                    fout.write(', "%s\ :sup:`*`"'%self._scoreArray[i][j])
+                else:
+                    fout.write(', "%s"'%self._scoreArray[i][j])
             fout.write('\n')
 
         # for i in xrange(self._nBonus):
@@ -453,6 +456,9 @@ class BowlPool():
             fout.write(', "**%s**"'%self._scoreTotals[j])
         fout.write('\n')
         
+        fout.write('\n')
+        fout.write('\* *Includes sure thing bowl bonus point*\n')
+        fout.write('\n')
         fout.close()
 
     def writeResultsCSVFile(self):
@@ -496,6 +502,7 @@ class BowlPool():
     # ---- utilities ---------------------------------------------------
     
     def _getTeamIndex(self, teamName):
+        #print self._teamList
         return self._teamList.index(teamName)
 
     def listBowlData(self):

@@ -1,0 +1,16 @@
+**2016-2017 Bowl Pool**
+
+| *Last updated:  2017-01-10 09:58:21*
+| *Last bowl scored:  SUGAR BOWL (Oklahoma vs. Auburn)*
+
+
+- `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)
+- `Results <results.html>`_ (`csv <results.csv>`__)
+- `Picks <picks.html>`_ (`csv <picks.csv>`__)
+
+Analysis
+
+- `Score distribution <scoresHistogram.png>`_
+- `Points Trajectories <pointsTrajectories.png>`_
+- `Rankings Trajectories <rankingsTrajectories.png>`_
+

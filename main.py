@@ -26,11 +26,14 @@ main_fout = open(mainfile,'w')
 main_fout.write('**Bowl Pools**\n')
 main_fout.write('\n')
 
-BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018']
-CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017']
-highlightList = ['Nerf Herder','Static', 'Lightning', 'Thunder',
-                 'D-Bo','Em214', 'GlamKam', 'Bumblerooski', '#MamaBear',
-                 'Eclipse']
+BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022']
+CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018']
+#highlightList = ['Nerf Herder','Static', 'Lightning', 'Thunder',
+#                 'D-Bo','Em214', 'GlamKam', 'Bumblerooski', '#MamaBear',
+#                 'Eclipse']
+#highlightList = ['Bumblerooski', "Can't Stop a Badger!", "Knights of Ren",
+#                 "Leeerroyyy Jeennkinns!!", "Ms. Snuffleupagus", "Sweet Lou"]
+highlightList = []
 performAnalysis = True
 #performAnalysis = False
 

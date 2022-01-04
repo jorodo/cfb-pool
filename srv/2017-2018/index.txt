@@ -1,0 +1,16 @@
+**2017-2018 Bowl Pool**
+
+| *Last updated:  2018-01-08 23:23:54*
+| *Last bowl scored:  Sugar Bowl (playoff semifinal) (Alabama vs. Clemson)*
+
+
+- `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)
+- `Results <results.html>`_ (`csv <results.csv>`__)
+- `Picks <picks.html>`_ (`csv <picks.csv>`__)
+
+Analysis
+
+- `Score distribution <scoresHistogram.png>`_
+- `Points Trajectories <pointsTrajectories.png>`_
+- `Rankings Trajectories <rankingsTrajectories.png>`_
+
