@@ -26,14 +26,59 @@ main_fout = open(mainfile,'w')
 main_fout.write('**Bowl Pools**\n')
 main_fout.write('\n')
 
-BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022']
-CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018']
+BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022', '2022-2023']
+CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018', '2021-2022']
 #highlightList = ['Nerf Herder','Static', 'Lightning', 'Thunder',
 #                 'D-Bo','Em214', 'GlamKam', 'Bumblerooski', '#MamaBear',
 #                 'Eclipse']
-#highlightList = ['Bumblerooski', "Can't Stop a Badger!", "Knights of Ren",
-#                 "Leeerroyyy Jeennkinns!!", "Ms. Snuffleupagus", "Sweet Lou"]
-highlightList = []
+#highlightList = [\
+#                 'Bear-in-Law',
+#                 '#RealMamaBear',
+#                 'GlamKam',
+#                 'The Dood',
+#                 "Can't Stop a Badger!",
+#                 'Panda',
+#                 'Gigi',
+#                 'Blue Orred',
+#                 'Bopper',
+#                 'Knights of Ren',
+#                 'Ms. Snuffleupagus',
+#                 'Sweet Lou',
+#                 'TransferPortal',
+#                 'The Aggie',
+#                 'D-Bo',
+#                 'Bumblerooski',
+#                 'Leeerroyyy Jeennkinns!!',
+#                 'SaschaPicksDogs',
+#                 "The Dood's Nemesis"\
+#                 ]
+highlightList = [\
+#                 'Bugaroo',
+                 'Badgers',
+                 'Gigi',
+                 'Sure Thing Shipley',
+                 'Amanda',
+#                 'bopper',
+#                 'W2D2',
+#                 'GlamKam',
+#                 'MamaLonghorn',
+#                 '#mamabear',
+#                 "Can't Stop a Badger!",
+#                 'Panda',
+#                 'Gigi',
+#                 'Blue Orred',
+#                 'Bopper',
+#                 'Knights of Ren',
+#                 'Ms. Snuffleupagus',
+#                 'Sweet Lou',
+#                 'TransferPortal',
+#                 'The Aggie',
+#                 'D-Bo',
+#                 'Bumblerooski',
+#                 'Leeerroyyy Jeennkinns!!',
+#                 'SaschaPicksDogs',
+#                 "The Dood's Nemesis"\
+                 ]
 performAnalysis = True
 #performAnalysis = False
 
@@ -98,8 +143,8 @@ for bowlPoolName in BowlPoolList:
         bp_fout.write('Analysis\n')
         bp_fout.write('\n')
         bp_fout.write('- `Score distribution <scoresHistogram.png>`_\n')
-        bp_fout.write('- `Points Trajectories <pointsTrajectories.png>`_\n')
-        bp_fout.write('- `Rankings Trajectories <rankingsTrajectories.png>`_\n')
+        bp_fout.write('- `Points trajectories <pointsTrajectories.png>`_\n')
+        bp_fout.write('- `Rankings trajectories <rankingsTrajectories.png>`_\n')
         bp_fout.write('\n')
     bp_fout.close()
 
