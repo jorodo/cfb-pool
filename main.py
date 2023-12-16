@@ -26,8 +26,10 @@ main_fout = open(mainfile,'w')
 main_fout.write('**Bowl Pools**\n')
 main_fout.write('\n')
 
-BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022', '2022-2023']
-CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018', '2021-2022']
+BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022', '2022-2023', '2022-2023_Bonus','2023-2024']
+#BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022', '2022-2023']
+CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018', '2021-2022', '2022-2023','2022-2023_Bonus']
+#CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018', '2021-2022']
 #highlightList = ['Nerf Herder','Static', 'Lightning', 'Thunder',
 #                 'D-Bo','Em214', 'GlamKam', 'Bumblerooski', '#MamaBear',
 #                 'Eclipse']
@@ -54,10 +56,10 @@ CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018', '2021-2
 #                 ]
 highlightList = [\
 #                 'Bugaroo',
-                 'Badgers',
-                 'Gigi',
-                 'Sure Thing Shipley',
-                 'Amanda',
+#                 'Badgers',
+#                 'Gigi',
+#                 'Sure Thing Shipley',
+#                 'Amanda',
 #                 'bopper',
 #                 'W2D2',
 #                 'GlamKam',
@@ -79,8 +81,8 @@ highlightList = [\
 #                 'SaschaPicksDogs',
 #                 "The Dood's Nemesis"\
                  ]
-performAnalysis = True
-#performAnalysis = False
+#performAnalysis = True
+performAnalysis = False
 
 for bowlPoolName in BowlPoolList:
     main_fout.write('- `%s <%s/>`_'%(bowlPoolName, bowlPoolName))
