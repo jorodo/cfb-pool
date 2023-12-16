@@ -1,0 +1,10 @@
+**2023-2024 Bowl Pool**
+
+| *Last updated:  2023-12-16 17:02:19*
+| *Last bowl scored:  Myrtle Beach Bowl (Georgia Southern vs. Ohio)*
+
+
+- `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)
+- `Results <results.html>`_ (`csv <results.csv>`__)
+- `Picks <picks.html>`_ (`csv <picks.csv>`__)
+

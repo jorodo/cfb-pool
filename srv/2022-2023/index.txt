@@ -1,0 +1,16 @@
+**2022-2023 Bowl Pool**
+
+| *Last updated:  2023-01-09 21:40:39*
+| *Last bowl scored:  Rose Bowl (Utah vs. Penn State)*
+
+
+- `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)
+- `Results <results.html>`_ (`csv <results.csv>`__)
+- `Picks <picks.html>`_ (`csv <picks.csv>`__)
+
+Analysis
+
+- `Score distribution <scoresHistogram.png>`_
+- `Points trajectories <pointsTrajectories.png>`_
+- `Rankings trajectories <rankingsTrajectories.png>`_
+

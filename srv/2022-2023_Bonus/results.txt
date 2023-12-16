@@ -1,0 +1,15 @@
+.. csv-table:: 
+   :header: "ID", "Bowl Name", "Favorite", "Underdog", "Spread", #mamabear, Amanda, Bad New Bibby, Badgers, Bear in Law, Bugaroo, Gigi, MamaLonghorn, NIL, Sure Thing Shipley
+
+   "1", "National Championship", "Georgia", "TCU", "12.5", "2.0", "2.0", "0.0", "0.0", "0.0", "0.0", "2.0", "2.0", "0.0", "2.0"
+   "B1", "Who will score the first touchdown?", " ", " ", " ", "1.0", "0.0", "0.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0"
+   "B2", "Will Brock Bowers score at least one touchdown?", " ", " ", " ", "0.0", "1.0", "0.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0"
+   "B3", "Will Max Duggan score at least one rushing touchdown?", " ", " ", " ", "1.0", "1.0", "0.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0"
+   "B4", "Which quarterback will have more total offense?", " ", " ", " ", "1.0", "0.0", "0.0", "1.0", "0.0", "1.0", "1.0", "1.0", "0.0", "1.0"
+   "B5", "Will at least 63 points be scored in the final?", " ", " ", " ", "0.0", "0.0", "0.0", "1.0", "1.0", "1.0", "0.0", "0.0", "1.0", "1.0"
+   "T1", "How many points will Georgia score?", " ", " ", " ", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0"
+   "T2", "How many points will TCU score?", " ", " ", " ", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0"
+   "**Totals**", " ", " ", " ", " ", "**5.0**", "**4.0**", "**0.0**", "**5.0**", "**4.0**", "**5.0**", "**6.0**", "**6.0**", "**4.0**", "**7.0**"
+
+\* *Includes sure thing bowl bonus point*
+
