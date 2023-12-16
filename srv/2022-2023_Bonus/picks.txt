@@ -1,0 +1,14 @@
+.. csv-table:: 
+   :header: "ID", "Bowl Name", "Favorite", "Underdog", "Spread", #mamabear, Amanda, Bad New Bibby, Badgers, Bear in Law, Bugaroo, Gigi, MamaLonghorn, NIL, Sure Thing Shipley
+
+   "1", "National Championship", "Georgia", "TCU", "12.5", "Georgia", "Georgia", "TCU", "TCU", "TCU", "TCU", "Georgia", "Georgia", "TCU", "Georgia"
+   "B1", "Who will score the first touchdown?", " ", " ", " ", "Georgia", "TCU", "TCU", "Georgia", "Georgia", "Georgia", "Georgia", "Georgia", "Georgia", "Georgia"
+   "B2", "Will Brock Bowers score at least one touchdown?", " ", " ", " ", "No", "Yes", "No", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"
+   "B3", "Will Max Duggan score at least one rushing touchdown?", " ", " ", " ", "Yes", "Yes", "No", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes", "Yes"
+   "B4", "Which quarterback will have more total offense?", " ", " ", " ", "Stetson Bennett", "Max Duggan", "Max Duggan", "Stetson Bennett", "Max Duggan", "Stetson Bennett", "Stetson Bennett", "Stetson Bennett", "Max Duggan", "Stetson Bennett"
+   "B5", "Will at least 63 points be scored in the final?", " ", " ", " ", "No", "No", "No", "Yes", "Yes", "Yes", "No", "No", "Yes", "Yes"
+   "T1", "How many points will Georgia score?", " ", " ", " ", "35", "31", "27", "38", "30", "31", "28", "35", "34", "42"
+   "T2", "How many points will TCU score?", " ", " ", " ", "14", "28", "30", "44", "35", "38", "21", "10", "42", "35"
+
+\* *Denotes sure thing bowl*
+

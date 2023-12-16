@@ -1,0 +1,10 @@
+**2022-2023_Bonus Bowl Pool**
+
+| *Last updated:  2023-01-09 21:54:44*
+| *Last bowl scored:  National Championship (Georgia vs. TCU)*
+
+
+- `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)
+- `Results <results.html>`_ (`csv <results.csv>`__)
+- `Picks <picks.html>`_ (`csv <picks.csv>`__)
+

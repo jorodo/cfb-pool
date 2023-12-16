@@ -1,0 +1,167 @@
+python2 main.py
+Bugaroo  (17.25)
+~~~~~~~~~~~~~~~~~~~~
+0. Marshall  (1.0)
+1. Eastern Michigan  (1.5)
+2. Toledo  (1.0)
+3. Western Kentucky  (1.5)
+4. Baylor  (0.0)
+5. (STB) Houston  (2.0)
+6. Missouri  (0.0)
+7. San Diego State  (0.0)
+8. New Mexico State  (1.25)
+9. Georgia Southern  (0.0)
+10. Memphis  (1.0)
+11. East Carolina  (1.0)
+12. Wisconsin  (1.0)
+13. Duke  (1.0)
+14. Kansas  (0.0)
+15. (STB) Oregon  (2.0)
+16. Ole Miss  (0.0)
+17. Minnesota  (1.0)
+18. (STB) Florida State  (2.0)
+19. Texas  (0.0)
+20. NC State  (0.0)
+21. UCLA  (0.0)
+22. South Carolina  (0.0)
+23. Wyoming  (0.0)
+24. Clemson  (0.0)
+25. Alabama
+26. Iowa
+27. Michigan
+28. Georgia
+29. Mississippi State
+30. LSU
+31. Tulane
+32. Utah
+B0. Who will win the National Championship? Michigan
+B1. How many of these teams will cancel their bowl game? 0
+B2. Will more than 62 total points be scored in the Peach Bowl? No
+B3. Will more than 58.5 total points be scored in the Fiesta Bowl? No
+B4. Will Caleb Williams pass for more than 300 yards against Tulane? No
+B5. Will an orange-colored team win the Orange Bowl? Yes
+Badgers  (18.0)
+~~~~~~~~~~~~~~~~~~~~
+0. Marshall  (1.0)
+1. San Jose State  (0.0)
+2. Toledo  (1.0)
+3. Western Kentucky  (1.5)
+4. Air Force  (1.5)
+5. (STB) Houston  (2.0)
+6. Wake Forest  (1.0)
+7. San Diego State  (0.0)
+8. Bowling Green  (0.0)
+9. Georgia Southern  (0.0)
+10. Memphis  (1.0)
+11. Coastal Carolina  (0.0)
+12. (STB) Wisconsin  (2.0)
+13. UCF  (0.0)
+14. Arkansas  (1.0)
+15. Oregon  (1.0)
+16. Ole Miss  (0.0)
+17. Syracuse  (0.0)
+18. Florida State  (1.0)
+19. Texas  (0.0)
+20. NC State  (0.0)
+21. UCLA  (0.0)
+22. South Carolina  (0.0)
+23. Ohio  (1.0)
+24. Tennessee  (3.0)
+25. Alabama
+26. Kentucky
+27. Michigan
+28. (STB) Georgia
+29. Mississippi State
+30. LSU
+31. Tulane
+32. Utah
+B0. Who will win the National Championship? Michigan
+B1. How many of these teams will cancel their bowl game? 0
+B2. Will more than 62 total points be scored in the Peach Bowl? No
+B3. Will more than 58.5 total points be scored in the Fiesta Bowl? No
+B4. Will Caleb Williams pass for more than 300 yards against Tulane? No
+B5. Will an orange-colored team win the Orange Bowl? Yes
+Amanda  (19.25)
+~~~~~~~~~~~~~~~~~~~~
+0. (STB) Marshall  (2.0)
+1. Eastern Michigan  (1.5)
+2. Liberty  (0.0)
+3. South Alabama  (0.0)
+4. Baylor  (0.0)
+5. Houston  (1.0)
+6. Missouri  (0.0)
+7. Middle Tennessee  (1.5)
+8. Bowling Green  (0.0)
+9. Georgia Southern  (0.0)
+10. Memphis  (1.0)
+11. Coastal Carolina  (0.0)
+12. Wisconsin  (1.0)
+13. UCF  (0.0)
+14. Arkansas  (1.0)
+15. Oregon  (1.0)
+16. Ole Miss  (0.0)
+17. Minnesota  (1.0)
+18. (STB) Florida State  (2.0)
+19. Texas  (0.0)
+20. NC State  (0.0)
+21. Pitt  (1.25)
+22. Notre Dame  (1.0)
+23. Ohio  (1.0)
+24. Tennessee  (3.0)
+25. (STB) Alabama
+26. Iowa
+27. Michigan
+28. Georgia
+29. Mississippi State
+30. LSU
+31. USC
+32. Penn State
+B0. Who will win the National Championship? Georgia
+B1. How many of these teams will cancel their bowl game? 0
+B2. Will more than 62 total points be scored in the Peach Bowl? No
+B3. Will more than 58.5 total points be scored in the Fiesta Bowl? Yes
+B4. Will Caleb Williams pass for more than 300 yards against Tulane? Yes
+B5. Will an orange-colored team win the Orange Bowl? Yes
+#mamabear  (10.5)
+~~~~~~~~~~~~~~~~~~~~
+0. Marshall  (1.0)
+1. San Jose State  (0.0)
+2. Liberty  (0.0)
+3. South Alabama  (0.0)
+4. (STB) Baylor  (0.0)
+5. Houston  (1.0)
+6. Missouri  (0.0)
+7. San Diego State  (0.0)
+8. New Mexico State  (1.25)
+9. Georgia Southern  (0.0)
+10. Memphis  (1.0)
+11. East Carolina  (1.0)
+12. Oklahoma State  (0.0)
+13. UCF  (0.0)
+14. Kansas  (0.0)
+15. Oregon  (1.0)
+16. Texas Tech  (1.25)
+17. Minnesota  (1.0)
+18. Florida State  (1.0)
+19. Texas  (0.0)
+20. NC State  (0.0)
+21. UCLA  (0.0)
+22. South Carolina  (0.0)
+23. Ohio  (1.0)
+24. Clemson  (0.0)
+25. Alabama
+26. Kentucky
+27. TCU
+28. Georgia
+29. (STB) Mississippi State
+30. (STB) LSU
+31. USC
+32. Penn State
+B0. Who will win the National Championship? Georgia
+B1. How many of these teams will cancel their bowl game? 0
+B2. Will more than 62 total points be scored in the Peach Bowl? No
+B3. Will more than 58.5 total points be scored in the Fiesta Bowl? No
+B4. Will Caleb Williams pass for more than 300 yards against Tulane? No
+B5. Will an orange-colored team win the Orange Bowl? Yes
+rst2html srv/index.txt > srv/index.html
+cp -r srv/* ~/code/jrd.spinodal.org/jorodo.github.io/bowl_pool/

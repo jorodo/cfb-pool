@@ -1,0 +1,8 @@
+.. csv-table:: 
+   :header: "ID", "Bowl Name", "Favorite", "Underdog", "Spread", #MamaBear, Aggie Austin, Badgers Rock!, Barkside Ballers (Wylie & Flapjack), Bear-in-Law, Big 12 Bibby, bugabugaroo, COOKIES, Dazed & Confoosballed, Dbo, em&em, GlamKam, Kylo Bad Dog, LadyLonghorn, MamaDAWG, Manda Panda, Rando Cal Rece Ian, Sascha Picks Dogs, SEC Shipley, Sir Fluffy McFlufferson, The New Guy, WD50
+
+   "1", "Myrtle Beach Bowl", "Georgia Southern", "Ohio", "3.5", "1.25", "0.0", "1.25", "1.25", "0.0", "0.0", "1.25", "0.0", "0.0", "1.25", "0.0", "1.25", "0.0", "1.25", "0.0", "0.0", "1.25", "1.25", "0.0", "1.25", "1.25", "0.0"
+   "**Totals**", " ", " ", " ", " ", "**1.25**", "**0.0**", "**1.25**", "**1.25**", "**0.0**", "**0.0**", "**1.25**", "**0.0**", "**0.0**", "**1.25**", "**0.0**", "**1.25**", "**0.0**", "**1.25**", "**0.0**", "**0.0**", "**1.25**", "**1.25**", "**0.0**", "**1.25**", "**1.25**", "**0.0**"
+
+\* *Includes sure thing bowl bonus point*
+
