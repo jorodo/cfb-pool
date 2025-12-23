@@ -102,22 +102,21 @@ outfile.close()
 bonusFileName = 'formResultsBonus.csv'
 bonusLines = file(bonusFileName).read().strip().split('\n')
 bonusPicksDict = {}
-for i,teamName in enumerate(sortedNames): bonusPicksDict[teamName] = []
 bonusQuestionList = []
+nBonusQuestions = 5
+for i,teamName in enumerate(sortedNames): bonusPicksDict[teamName] = ['None' for i in range(nBonusQuestions)]
 firstQuestionIdx = 3
-#initialBonusLines = file('bonusPicks.csv').read().strip().split('\n')
-#for i,line in enumerate(initialBonusLines[1:]):
-#    for j,value in enumerate(line.split(',')):
-#        teamName = sortedNames[j]
-#        bonusPicksDict[teamName].append(value)
-
 for i,line in enumerate(bonusLines):
-    data = line.split(',')
+    data = line.split(',')[:firstQuestionIdx+nBonusQuestions]
     if i==0:
         [bonusQuestionList.append(question) for question in data[firstQuestionIdx:]]
         continue
     teamName = data[teamNameIdx]
-    [bonusPicksDict[teamName].append(answer) for answer in data[firstQuestionIdx:]]
+    for j,answer in enumerate(data[firstQuestionIdx:]):
+#        print(bonusPicksDict[teamName])
+#        print(j)
+        sys.stdout.flush()
+        bonusPicksDict[teamName][j] = answer
     
 # write the bonusPicks.csv file
 bonusPicksFileName = 'bonusPicks.csv'
@@ -125,8 +124,7 @@ outfile = open(bonusPicksFileName,'w')
 for i,teamName in enumerate(sortedNames[:len(sortedNames)-1]):
     outfile.write(teamName+',')
 outfile.write(sortedNames[len(sortedNames)-1]+'\n')
-nBonus = 1
-for i in range(nBonus):
+for i in range(nBonusQuestions):
     for j,teamName in enumerate(sortedNames[:len(sortedNames)-1]):
         outfile.write('%s'%bonusPicksDict[teamName][i]+',')
     outfile.write('%s'%bonusPicksDict[sortedNames[len(sortedNames)-1]][i]+'\n')

@@ -26,9 +26,9 @@ main_fout = open(mainfile,'w')
 main_fout.write('**Bowl Pools**\n')
 main_fout.write('\n')
 
-BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022', '2022-2023', '2022-2023_Bonus','2023-2024']
+BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022', '2022-2023', '2022-2023_Bonus','2023-2024','2025-2026']
 #BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022', '2022-2023']
-CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018', '2021-2022', '2022-2023','2022-2023_Bonus']
+CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018', '2021-2022', '2022-2023','2022-2023_Bonus','2023-2024']
 #CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018', '2021-2022']
 #highlightList = ['Nerf Herder','Static', 'Lightning', 'Thunder',
 #                 'D-Bo','Em214', 'GlamKam', 'Bumblerooski', '#MamaBear',
@@ -55,34 +55,31 @@ CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018', '2021-2
 #                 "The Dood's Nemesis"\
 #                 ]
 highlightList = [\
-#                 'Bugaroo',
-#                 'Badgers',
-#                 'Gigi',
-#                 'Sure Thing Shipley',
-#                 'Amanda',
-#                 'bopper',
-#                 'W2D2',
+                 'Barkside Ballers',
+#                 'SEC Shipley',
+                 "Vibe-free since '73",
+#                 'Sascha Picks Dogs',
+                 "Sherrone Moore's Bad Day"\
+#                 'bugabugaroo',
+#                 'The New Guy',
+#                 'Kylo Bad Dog',
+#                 'MamaDAWG',
+#                 'Rando Cal Rece Ian',
+#                 '#MamaBear',
+#                 'Aggie Austin',
 #                 'GlamKam',
-#                 'MamaLonghorn',
-#                 '#mamabear',
-#                 "Can't Stop a Badger!",
-#                 'Panda',
-#                 'Gigi',
-#                 'Blue Orred',
-#                 'Bopper',
-#                 'Knights of Ren',
-#                 'Ms. Snuffleupagus',
-#                 'Sweet Lou',
-#                 'TransferPortal',
-#                 'The Aggie',
-#                 'D-Bo',
-#                 'Bumblerooski',
-#                 'Leeerroyyy Jeennkinns!!',
-#                 'SaschaPicksDogs',
-#                 "The Dood's Nemesis"\
+#                 'Sir Fluffy McFlufferson',
+#                 'Bear-in-Law',
+#                 'Badgers Rock!',
+#                 'COOKIES',
+#                 'Manda Panda',
+#                 'WD50',
+#                 'em&em',
+#                 'Big 12 Bibby',
+#                 'Dazed & Confoosballed'\
                  ]
-#performAnalysis = True
-performAnalysis = False
+performAnalysis = True
+#performAnalysis = False
 
 for bowlPoolName in BowlPoolList:
     main_fout.write('- `%s <%s/>`_'%(bowlPoolName, bowlPoolName))

@@ -41,5 +41,9 @@
 39,Citrus Bowl,Tennessee,Iowa,7.0,Tennessee,Iowa,Tennessee,Iowa,Tennessee,Tennessee,Tennessee,Tennessee,Tennessee,Iowa,Tennessee,Tennessee,Iowa,Tennessee,Tennessee,Tennessee,Tennessee,Iowa,Tennessee,Tennessee,Tennessee,Tennessee
 40,Rose Bowl,Michigan,Alabama,1.5,Michigan,Michigan,Michigan,Michigan,Michigan,Michigan,Alabama,Michigan*,Michigan,Alabama*,Alabama,Michigan,Michigan,Michigan,Alabama*,Alabama,Michigan,Alabama,Alabama,Alabama,Michigan,Alabama
 41,Sugar,Texas,Washington,4.5,Texas,Texas*,Texas,Texas*,Texas,Texas,Texas*,Texas*,Texas,Texas*,Texas*,Texas*,Texas,Texas,Texas*,Texas,Texas,Washington,Washington,Washington,Texas,Texas
-B1,Who will win the National Championship?, , , ,Texas,Texas,Michigan,Michigan,Texas,Texas,Texas,Michigan,Texas,Texas,Texas,Texas,Washington,Michigan,Texas,Texas,Texas,Michigan,Alabama,Alabama,Michigan,Texas
+B1,Who will win the National Championship?, , , ,Texas,Texas,Michigan,Michigan,Texas,Texas,Texas,Michigan,Texas,Texas,Texas,Texas,Washington,Texas,Texas,Texas,Texas,Michigan,Alabama,Alabama,Michigan,Texas
+B2,Will more than 62 total points be scored in the Sugar Bowl (Texas vs. Washington)?, , , ,No,No,Yes,No,Yes,No,No,No,No,Yes,No,Yes,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes
+B3,Will Michael Penix pass for more than 309 yards against Texas?, , , ,No,Yes,Yes,No,Yes,No,Yes,Yes,No,Yes,Yes,No,No,No,No,No,Yes,Yes,Yes,Yes,No,Yes
+B4,Will more than 44 total points be scored in the Rose Bowl (Michigan vs. Alabama)?, , , ,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,No,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes
+B5,Will Jalen Milroe have more than 234 yards of total offense against Michigan?, , , ,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes
 

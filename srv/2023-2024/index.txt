@@ -1,15 +1,16 @@
 **2023-2024 Bowl Pool**
 
-<<<<<<< HEAD
-| *Last updated:  2023-12-17 10:39:39*
-| *Last bowl scored:  Independence Bowl (Texas Tech vs. California)*
-=======
-| *Last updated:  2023-12-16 17:02:19*
-| *Last bowl scored:  Myrtle Beach Bowl (Georgia Southern vs. Ohio)*
->>>>>>> 5dbb4874e2af730d2d304143ffc7cfbf80d6733c
+| *Last updated:  2024-01-09 08:30:37*
+| *Last bowl scored:  Sugar (Texas vs. Washington)*
 
 
 - `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)
 - `Results <results.html>`_ (`csv <results.csv>`__)
 - `Picks <picks.html>`_ (`csv <picks.csv>`__)
+
+Analysis
+
+- `Score distribution <scoresHistogram.png>`_
+- `Points trajectories <pointsTrajectories.png>`_
+- `Rankings trajectories <rankingsTrajectories.png>`_
 
