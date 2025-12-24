@@ -1,0 +1,16 @@
+**2025-2026 Bowl Pool**
+
+| *Last updated:  2025-12-24 16:01:16*
+| *Last bowl scored:  SCOOTER'S COFFEE FRISCO BOWL (UNLV vs. Ohio (Bobcats))*
+
+
+- `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)
+- `Results <results.html>`_ (`csv <results.csv>`__)
+- `Picks <picks.html>`_ (`csv <picks.csv>`__)
+
+Analysis
+
+- `Score distribution <scoresHistogram.png>`_
+- `Points trajectories <pointsTrajectories.png>`_
+- `Rankings trajectories <rankingsTrajectories.png>`_
+
