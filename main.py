@@ -55,7 +55,7 @@ CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018', '2021-2
 #                 "The Dood's Nemesis"\
 #                 ]
 highlightList = [\
-                 'Barkside Ballers',
+                 'Bearly Watching',
 #                 'SEC Shipley',
                  "Vibe-free since '73",
 #                 'Sascha Picks Dogs',
