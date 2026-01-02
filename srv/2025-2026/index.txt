@@ -1,7 +1,7 @@
 **2025-2026 Bowl Pool**
 
-| *Last updated:  2025-12-24 16:01:16*
-| *Last bowl scored:  SCOOTER'S COFFEE FRISCO BOWL (UNLV vs. Ohio (Bobcats))*
+| *Last updated:  2026-01-01 18:21:19*
+| *Last bowl scored:  CFP Quarterfinal (Rose) (Indiana vs. Alabama)*
 
 
 - `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)

@@ -20,6 +20,7 @@ class BowlPool():
     def __init__(self, input_dir, output_dir, highlightList=[],
                  bowlResultsFileName='bowlResults.csv',
                  bowlPicksFileName='bowlPicks.csv',
+                 bowlPickStringsFileName='bowlPickStrings.csv',
                  STPicksFileName='bowlPicksSureThing.csv',
                  bonusResultsFileName='bonusResults.csv',
                  bonusPicksFileName='bonusPicks.csv',
@@ -31,6 +32,7 @@ class BowlPool():
         self._output_dir = output_dir
         self._bowlResultsFileName = os.path.join(input_dir,bowlResultsFileName)
         self._bowlPicksFileName = os.path.join(input_dir,bowlPicksFileName)
+        self._bowlPickStringsFileName = os.path.join(input_dir,bowlPickStringsFileName)
         self._STPicksFileName = os.path.join(input_dir,STPicksFileName)
         self._bonusResultsFileName = os.path.join(input_dir,bonusResultsFileName)
         self._bonusPicksFileName = os.path.join(input_dir,bonusPicksFileName)
@@ -59,11 +61,13 @@ class BowlPool():
         self._bonusResultsIdxs = []
         self._resultsArray = None
         self._picksArray = None
+        self._pickStringsDict = None
         self._bonusPicksArray = None
         self._dogScoreArray = None
         self._favWinsArray = None
         self._dogWinsArray = None
         self._winsArray = None
+        self._validPicksArray = None
         self._stbArray = None
         self._favPointsArray = None
         self._dogPointsArray = None
@@ -75,6 +79,7 @@ class BowlPool():
         self._parseResultsFile()
         self._parseBonusFile()
         self._parseBowlPicksFile()
+        self._parseBowlPickStringsFile()
         self._parseSTPicksFile()
         self._parseBonusPicksFile()
         self._parseDogScoreFile()
@@ -111,6 +116,17 @@ class BowlPool():
             line_data = line.split(',')[:self._nTeams]
             for j,pick in enumerate(line_data):  # FIXME: don't let csv line end in ','
                 self._picksArray[i,j] = float(pick)
+
+    def _parseBowlPickStringsFile(self):
+        lines = file(self._bowlPickStringsFileName).read().strip().split('\n')
+        self._pickStringsDict = {}
+        for teamName in self._teamList:
+            self._pickStringsDict[teamName]=[]
+
+        for i,line in enumerate(lines[1:]):
+            line_data = line.split(',')[:self._nTeams]
+            for j,pick in enumerate(line_data):  # FIXME: don't let csv line end in ','
+                self._pickStringsDict[self._teamList[j]].append(pick)
 
     def _parseSTPicksFile(self):
         lines = file(self._STPicksFileName).read().strip().split('\n')
@@ -173,8 +189,9 @@ class BowlPool():
         self._loadArrays()
         self._scoreArray = self._winsArray*(self._pointsArray + self._stbArray)
         self._loadBonusScoreArray()
+        self._scoreTotals = self._scoreArray[self._resultsIdxs].sum(axis=0)
         self._scoreTotals = self._scoreArray[self._resultsIdxs].sum(axis=0) \
-                            + self._bonusScoreArray[self._bonusResultsIdxs].sum(axis=0)
+            + self._bonusScoreArray[self._bonusResultsIdxs].sum(axis=0)
         self._rankTeams()
 
     def _loadArrays(self):
@@ -196,7 +213,23 @@ class BowlPool():
                              + (1-self._resultsArray)*self._dogPointsArray
         self._favWinsArray = self._resultsArray * self._picksArray
         self._dogWinsArray = (1.-self._resultsArray)*(1.-self._picksArray)
-        self._winsArray = self._favWinsArray + self._dogWinsArray
+        self._loadValidPicksArray()
+        self._winsArray = (self._favWinsArray + self._dogWinsArray)*self._validPicksArray
+
+    def _loadValidPicksArray(self):
+        """
+        Pick is valid if the team played in the bowl game.
+        
+        """
+        self._validPicksArray = np.ones(self._resultsArray.shape)
+        for i,bowlID in enumerate(self._bowlList):
+            for j,teamName in enumerate(self._teamList):
+                pick = self._pickStringsDict[teamName][i]
+                fav = self._favList[i]
+                dog = self._dogList[i]
+                if pick not in [fav,dog]:
+                    print(pick,fav, dog)
+                    self._validPicksArray[i,j] = 0
         
     def _rankTeams(self):
         results_list = []
@@ -272,7 +305,7 @@ class BowlPool():
                 dogPoints = bonusFactor*favPoints
                 
         if dogPoints == None:
-            sys.stdout.write('error: could not assign dogPoints')
+            sys.stderr.write('error: could not assign dogPoints')
             sys.exit()
 
         return dogPoints
@@ -358,10 +391,13 @@ class BowlPool():
                                                           self._dogList[i],
                                                           self._spreadList[i]))
             for j in xrange(self._nTeams):
-                if self._stbArray[i][j]:
-                    pick = picksMap[j][i] + '\ :sup:`*`'
-                else:
-                    pick = picksMap[j][i]
+#                if self._stbArray[i][j]:
+#                    pick = picksMap[j][i] + '\ :sup:`*`'
+#                else:
+#                    pick = picksMap[j][i]
+#                fout.write(', "%s"'%pick)
+                teamName = self._teamList[j]
+                pick = self._pickStringsDict[teamName][i]
                 fout.write(', "%s"'%pick)
             fout.write('\n')
 

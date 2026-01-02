@@ -8,31 +8,31 @@
 8,BUSH'S BOCA RATON BOWL,8.5,Louisville,Toledo,1,1
 9,NEW ORLEANS BOWL,4,Western Kentucky,Southern Miss,1,1
 10,SCOOTER'S COFFEE FRISCO BOWL,4.5,UNLV,Ohio (Bobcats),1,0
-11,SHERATON HAWAIʻI BOWL,1.5,California,Hawaii,1,-1
-12,GAMEABOVE SPORTS BOWL,10.5,Northwestern,Central Michigan,1,-1
-13,RATE BOWL,2.5,Minnesota,New Mexico,1,-1
-14,FIRST RESPONDER BOWL,8.5,UTSA,Florida International,1,-1               
-15,MILITARY BOWL,4.5,Pittsburgh,East Carolina,1,-1                        
-16,PINSTRIPE BOWL,4.5,Clemson,Penn State,1,-1                             
-17,FENWAY BOWL,6.5,Army,Uconn,1,-1                                        
-18,SNOOP DOG ARIZONA BOWL,3.5,Fresno State,Miami (OH),1,-1                
-19,POP-TARTS BOWL,4.5,BYU,Georgia Tech,1,-1                               
-20,NEW MEXICO BOWL,3.5,North Texas,San Diego State,1,-1                   
-21,GATOR BOWL,6.5,Missouri,Virginia,1,-1                                  
-22,TEXAS BOWL,3,Houston,LSU,1,-1                                          
-23,BIRMINGHAM BOWL,4,Georgia Southern,Appalachain State,1,-1              
-24,INDEPENDENCE BOWL,6.5,Louisiana Tech,Coastal Carolina,1,-1             
-25,MUSIC CITY BOWL,4.5,Tennessee,Illiniois,1,-1                           
-26,ALAMO BOWL,6.5,USC,TCU,1,-1                                            
-27,RELIAQUEST BOWL,5.5,Vanderbilt,Iowa,1,-1                               
-28,SUN BOWL,1.5,Duke,Arizona State,1,-1                                   
-29,CITRUS BOWL,7.5,Texas,Michigan,1,-1                                    
-30,LAS VEGAS BOWL,16.5,Utah,Nebraska,1,-1                                 
-31,CFP Quarterfinal (Cotton),0,Ohio State,ATM or Miami,3,-1               
-32,CFP Quarterfinal (Orange),0,Texas Tech,ORE or JM,3,-1                  
-33,CFP Quarterfinal (Rose),0,Indiana,AL or OK,3,-1                        
-34,CFP Quarterfinal (Sugar),0,Georga,Ole Miss or Tulane,3,-1              
-35,ARMED FORCES BOWL,10.5,Texas State,Rice,1,-1                           
+11,SHERATON HAWAIʻI BOWL,1.5,California,Hawaii,1,0
+12,GAMEABOVE SPORTS BOWL,10.5,Northwestern,Central Michigan,1,1
+13,RATE BOWL,2.5,Minnesota,New Mexico,1,1
+14,FIRST RESPONDER BOWL,8.5,UTSA,Florida International,1,1
+15,MILITARY BOWL,4.5,Pittsburgh,East Carolina,1,0
+16,PINSTRIPE BOWL,4.5,Clemson,Penn State,1,0
+17,FENWAY BOWL,6.5,Army,Uconn,1,1
+18,SNOOP DOG ARIZONA BOWL,3.5,Fresno State,Miami (OH),1,1
+19,POP-TARTS BOWL,4.5,BYU,Georgia Tech,1,1
+20,NEW MEXICO BOWL,3.5,North Texas,San Diego State,1,1
+21,GATOR BOWL,6.5,Missouri,Virginia,1,0
+22,TEXAS BOWL,3,Houston,LSU,1,1
+23,BIRMINGHAM BOWL,4,Georgia Southern,Appalachain State,1,1
+24,INDEPENDENCE BOWL,6.5,Louisiana Tech,Coastal Carolina,1,1
+25,MUSIC CITY BOWL,4.5,Tennessee,Illiniois,1,0
+26,ALAMO BOWL,6.5,USC,TCU,1,0
+27,RELIAQUEST BOWL,5.5,Vanderbilt,Iowa,1,0
+28,SUN BOWL,1.5,Duke,Arizona State,1,1
+29,CITRUS BOWL,7.5,Texas,Michigan,1,1
+30,LAS VEGAS BOWL,16.5,Utah,Nebraska,1,1
+31,CFP Quarterfinal (Cotton),0,Ohio State,Miami,3,0
+32,CFP Quarterfinal (Orange),0,Texas Tech,Oregon,3,0
+33,CFP Quarterfinal (Rose),0,Indiana,Alabama,3,1
+34,CFP Quarterfinal (Sugar),0,Georgia,Ole Miss,3,-1
+35,ARMED FORCES BOWL,10.5,Texas State,Rice,1,-1
 36,LIBERTY BOWL,4.5,Cincinnati,Navy,1,-1                                  
 37,DUKE'S MAYO BOWL,2.5,Mississippi State,Wake Forest,1,-1                
 38,HOLIDAY BOWL,3,Arizona,SMU,1,-1                                        

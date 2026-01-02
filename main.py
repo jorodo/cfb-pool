@@ -26,66 +26,49 @@ main_fout = open(mainfile,'w')
 main_fout.write('**Bowl Pools**\n')
 main_fout.write('\n')
 
-BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022', '2022-2023', '2022-2023_Bonus','2023-2024','2025-2026']
-#BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022', '2022-2023']
+#BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022', '2022-2023', '2022-2023_Bonus','2023-2024','2025-2026_Non-CFP']
+#BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022', '2022-2023', '2022-2023_Bonus','2023-2024','2025-2026_Non-CFP']
+#BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022', '2022-2023', '2022-2023_Bonus','2023-2024','2025-2026_CFP']
+BowlPoolList = ['2014-2015','2015-2016','2016-2017', '2017-2018','2021-2022', '2022-2023', '2022-2023_Bonus','2023-2024','2025-2026_Non-CFP','2025-2026_CFP','2025-2026']
 CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018', '2021-2022', '2022-2023','2022-2023_Bonus','2023-2024']
-#CompletedBowlPools = ['2014-2015','2015-2016', '2016-2017', '2017-2018', '2021-2022']
-#highlightList = ['Nerf Herder','Static', 'Lightning', 'Thunder',
-#                 'D-Bo','Em214', 'GlamKam', 'Bumblerooski', '#MamaBear',
-#                 'Eclipse']
-#highlightList = [\
-#                 'Bear-in-Law',
-#                 '#RealMamaBear',
-#                 'GlamKam',
-#                 'The Dood',
-#                 "Can't Stop a Badger!",
-#                 'Panda',
-#                 'Gigi',
-#                 'Blue Orred',
-#                 'Bopper',
-#                 'Knights of Ren',
-#                 'Ms. Snuffleupagus',
-#                 'Sweet Lou',
-#                 'TransferPortal',
-#                 'The Aggie',
-#                 'D-Bo',
-#                 'Bumblerooski',
-#                 'Leeerroyyy Jeennkinns!!',
-#                 'SaschaPicksDogs',
-#                 "The Dood's Nemesis"\
-#                 ]
 highlightList = [\
-                 'Bearly Watching',
-#                 'SEC Shipley',
+#                 'Bearly Watching',
                  "Vibe-free since '73",
-#                 'Sascha Picks Dogs',
-                 "Sherrone Moore's Bad Day"\
-#                 'bugabugaroo',
-#                 'The New Guy',
-#                 'Kylo Bad Dog',
-#                 'MamaDAWG',
-#                 'Rando Cal Rece Ian',
+                 "Sherrone Moore's Bad Day",
+                 'Battered Austin Syndrome',
+#                 'We Pay Players',
+#                 'Mama Dawg',
+#                 'Eclipse',
 #                 '#MamaBear',
-#                 'Aggie Austin',
-#                 'GlamKam',
-#                 'Sir Fluffy McFlufferson',
-#                 'Bear-in-Law',
-#                 'Badgers Rock!',
-#                 'COOKIES',
-#                 'Manda Panda',
-#                 'WD50',
-#                 'em&em',
-#                 'Big 12 Bibby',
-#                 'Dazed & Confoosballed'\
+#                 'Down',
+#                 'Barkside Ballers',
+#                 'Dazed and Confoosballed',
+#                 'First Round SIL',
+#                 "Wisconsin shoud've been here",
+#                 'Just Call Me Dr.',
+#                 'Sierra LeCat Dowdle',
+#                 'Upside',
+#                 'Sascha Picks Dogs',
+#                 'NoNND-Bo 2',
+#                 'bugaroo',
+#                 'BlueOrRed',
+#                 'Call Me An Optimist',
+#                 'Not So New Guy',
+#                 'Momma Longhorn',
+#                 'Arandas legacy Year',
+#                 'Game of Throws',
+#                 'NoNND-Bo 1',
+                 'The New Mendoza Line'\
                  ]
 performAnalysis = True
 #performAnalysis = False
 
 for bowlPoolName in BowlPoolList:
     main_fout.write('- `%s <%s/>`_'%(bowlPoolName, bowlPoolName))
+    main_fout.write('\n')
 
     if bowlPoolName in CompletedBowlPools:
-        main_fout.write('\n')
+#        main_fout.write('\n')
         continue
 
     # setup bowl pool object
