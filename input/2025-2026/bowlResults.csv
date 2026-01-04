@@ -31,11 +31,11 @@
 31,CFP Quarterfinal (Cotton),0,Ohio State,Miami,3,0
 32,CFP Quarterfinal (Orange),0,Texas Tech,Oregon,3,0
 33,CFP Quarterfinal (Rose),0,Indiana,Alabama,3,1
-34,CFP Quarterfinal (Sugar),0,Georgia,Ole Miss,3,-1
-35,ARMED FORCES BOWL,10.5,Texas State,Rice,1,-1
-36,LIBERTY BOWL,4.5,Cincinnati,Navy,1,-1                                  
-37,DUKE'S MAYO BOWL,2.5,Mississippi State,Wake Forest,1,-1                
-38,HOLIDAY BOWL,3,Arizona,SMU,1,-1                                        
+34,CFP Quarterfinal (Sugar),0,Georgia,Ole Miss,3,0
+35,ARMED FORCES BOWL,10.5,Texas State,Rice,1,1
+36,LIBERTY BOWL,4.5,Cincinnati,Navy,1,0
+37,DUKE'S MAYO BOWL,2.5,Mississippi State,Wake Forest,1,0
+38,HOLIDAY BOWL,3,Arizona,SMU,1,0
 39,CFP Semifinal (Fiesta),0,Ohio/ATM/Miami,GA/Ole Miss/Tulane,4,-1        
 40,CFP Semifinal (Peach),0,Texas Tech/ORE/JM,Indiana/AL/OK,4,-1           
 41,NATIONAL CHAMPIONSHIP,0,Winner of Peach Bowl,Winner of Fiesta Bowl,5,-1

@@ -1,7 +1,7 @@
 **2025-2026 Bowl Pool**
 
-| *Last updated:  2026-01-01 18:21:19*
-| *Last bowl scored:  CFP Quarterfinal (Rose) (Indiana vs. Alabama)*
+| *Last updated:  2026-01-04 12:18:52*
+| *Last bowl scored:  HOLIDAY BOWL (Arizona vs. SMU)*
 
 
 - `Rankings <rankings.html>`_ (`csv <rankings.csv>`__)
